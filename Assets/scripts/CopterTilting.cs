@@ -60,7 +60,7 @@ public class CopterTilting : MonoBehaviour {
         curVert = Mathf.Clamp(curVert, -maxAngle, maxAngle);
         // rotate x = eteenpäin/taaksepäin
         // rotate z = vasen/oikea
-        tr.eulerAngles = new Vector3(curVert, 0, curHor);
+        tr.localRotation = Quaternion.Euler(curVert, 0, curHor);
      //   Debug.Log("tr.eulerAngles=" + tr.eulerAngles.ToString());
     }
 }
