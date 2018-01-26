@@ -36,5 +36,10 @@ public class WaypointTraveller : MonoBehaviour {
             Vector3 delta = travelSpeed * Time.deltaTime * (waypoints[nextIndex].position - tr.position).normalized;
             tr.position += delta;
         }
+        else
+        {
+            tr.position = waypoints[0].position;
+            nextIndex = 1;
+        }
     }
 }
