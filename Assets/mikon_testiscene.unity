@@ -190,7 +190,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1437634924
 GameObject:
@@ -294,7 +294,37 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4027487703086000, guid: 4f84204079fd44346baa340a804032ba, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23126799586929732, guid: 4f84204079fd44346baa340a804032ba,
+        type: 2}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23126799586929732, guid: 4f84204079fd44346baa340a804032ba,
+        type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20193041085332706, guid: 4f84204079fd44346baa340a804032ba,
+        type: 2}
+      propertyPath: m_HDR
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20193041085332706, guid: 4f84204079fd44346baa340a804032ba,
+        type: 2}
+      propertyPath: m_AllowMSAA
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 124859397416872274, guid: 4f84204079fd44346baa340a804032ba,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 92017372519908038, guid: 4f84204079fd44346baa340a804032ba,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f84204079fd44346baa340a804032ba, type: 2}
