@@ -608,6 +608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 10}
+  yawSpeed: 90
 --- !u!124 &124131288441241018
 Behaviour:
   m_ObjectHideFlags: 1
