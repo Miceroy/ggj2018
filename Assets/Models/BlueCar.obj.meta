@@ -1,16 +1,17 @@
 fileFormatVersion: 2
-guid: 8edb6a159d7cb6a41a12c8ca5ae164ee
+guid: 87c9bcd14acad9440ba092f41377e15a
+timeCreated: 1516992063
+licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Apartment
+    100000: BlueCar
     100002: //RootNode
-    400000: Apartment
+    400000: BlueCar
     400002: //RootNode
-    2300000: Apartment
-    3300000: Apartment
-    4300000: Apartment
-    9500000: //RootNode
+    2300000: BlueCar
+    3300000: BlueCar
+    4300000: BlueCar
   materials:
     importMaterials: 1
     materialName: 0
@@ -75,7 +76,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
