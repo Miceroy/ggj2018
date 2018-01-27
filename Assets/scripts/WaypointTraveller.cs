@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // MIKKO TODO:
-// - Kameran "täryytys" pois
 // - Peliobjektin tagi komponnetti:
 // - Pistearvo
 // - Kameran zoomi smooth
