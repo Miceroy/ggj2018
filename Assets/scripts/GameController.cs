@@ -37,6 +37,7 @@ Objective 3:
 public class GameController : MonoBehaviour
 {
     public GameObject [] missionObjects;
+    public GameObject[] missionEnabledObjects;
     public Text statusText;
     int curMission = 0;
     public void targetFilmingCompleted(TargetToFilm ttf)
@@ -49,12 +50,20 @@ public class GameController : MonoBehaviour
 
     void startMission()
     {
+        foreach (GameObject obj in missionEnabledObjects)
+        {
+            obj.SetActive(true);
+        }
         statusText.text = "Start mission";
         missionObjects[curMission].SetActive(true);
     }
 
     void endMission()
     {
+        foreach (GameObject obj in missionEnabledObjects)
+        {
+            obj.SetActive(false);
+        }
         missionObjects[curMission].SetActive(false);
         curMission++;
         if (curMission >= missionObjects.Length)
@@ -76,6 +85,10 @@ public class GameController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        foreach (GameObject obj in missionEnabledObjects)
+        {
+            obj.SetActive(false);
+        }
         statusText.text = "Waiting new mission";
         Invoke("startMission", 5);
     }
