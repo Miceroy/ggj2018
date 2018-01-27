@@ -53,4 +53,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missionObjects:
   - {fileID: 0}
+  - {fileID: 0}
   statusText: {fileID: 0}

@@ -1890,7 +1890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59567ce69a4867d47af0bd507980d6e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 15, y: 15}
+  speed: {x: 30, y: 30}
   yawSpeed: 90
   tilt: {fileID: 114733350998482366}
 --- !u!114 &114537007756384020
