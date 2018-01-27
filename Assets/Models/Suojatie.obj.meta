@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 6c53d998b5779e24ba74ba7075673954
-timeCreated: 1517002874
+guid: da68ebd69c482df4ebf1bac0513b3f74
+timeCreated: 1517050381
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: RoadX
+    100000: Suojatie
     100002: //RootNode
-    400000: RoadX
+    400000: Suojatie
     400002: //RootNode
-    2300000: RoadX
-    3300000: RoadX
-    4300000: RoadX
+    2300000: Suojatie
+    3300000: Suojatie
+    4300000: Suojatie
   materials:
     importMaterials: 1
     materialName: 0

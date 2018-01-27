@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 6c53d998b5779e24ba74ba7075673954
-timeCreated: 1517002874
+guid: 0a4ef72d9b7c2b7488a2308c954d0463
+timeCreated: 1517047518
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: RoadX
+    100000: HillStraight
     100002: //RootNode
-    400000: RoadX
+    400000: HillStraight
     400002: //RootNode
-    2300000: RoadX
-    3300000: RoadX
-    4300000: RoadX
+    2300000: HillStraight
+    3300000: HillStraight
+    4300000: HillStraight
   materials:
     importMaterials: 1
     materialName: 0
