@@ -30,11 +30,11 @@ public class CopterTilting : MonoBehaviour {
         }
         else
         {
-            if (curHor > 0.1)
+            if (curHor > 1)
             {
                 curHor -= rotateSpeed * Time.deltaTime;
             }
-            else if (curHor < -0.1)
+            else if (curHor < -1)
             {
                 curHor += rotateSpeed * Time.deltaTime;
             }
