@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
 
     public void updateTotalFilmedTime(float totalFilmedTime)
     {
-        Debug.Log("totalFilmedTime=" + totalFilmedTime);
+      //  Debug.Log("totalFilmedTime=" + totalFilmedTime);
     }
 
     // Use this for initialization
