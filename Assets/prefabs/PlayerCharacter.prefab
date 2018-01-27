@@ -203,7 +203,6 @@ GameObject:
   - component: {fileID: 92987012901008084}
   - component: {fileID: 81637768748575328}
   - component: {fileID: 114428790552532542}
-  - component: {fileID: 114564457463711560}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1907,25 +1906,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   axis: {x: 0, y: 1, z: 0}
   speed: 1000
---- !u!114 &114564457463711560
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1222499737920800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48e4b2f3dc9f76546be25c3b3c825a2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noiseTexture: {fileID: 2800000, guid: 4a0515223d1c4414dbff4c2445e75450, type: 3}
-  noiseXSpeed: 100
-  noiseYSpeed: 100
-  noiseCutoff: 0.75
-  vignetteTexture: {fileID: 2800000, guid: 29e7dd25f6e28824a8813ccd2d580fd4, type: 3}
-  lineTexture: {fileID: 2800000, guid: dd0234321c179b0429d53cbe3724dbe8, type: 3}
-  lineColor: {r: 0.35490397, g: 0.45588237, b: 0.31509516, a: 1}
-  distortionStrength: 1
 --- !u!114 &114575460296294422
 MonoBehaviour:
   m_ObjectHideFlags: 1
