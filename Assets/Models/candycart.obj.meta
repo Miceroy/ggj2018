@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: d82af8bb728b35d45a4a58abefe1fb42
-timeCreated: 1517043807
+guid: ca7b369e2501a7c4884fad09a927a594
+timeCreated: 1517051875
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: cat
+    100000: candycart
     100002: //RootNode
-    400000: cat
+    400000: candycart
     400002: //RootNode
-    2300000: cat
-    3300000: cat
-    4300000: cat
+    2300000: candycart
+    3300000: candycart
+    4300000: candycart
   materials:
     importMaterials: 1
     materialName: 0

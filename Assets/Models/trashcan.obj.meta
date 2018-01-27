@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: d82af8bb728b35d45a4a58abefe1fb42
-timeCreated: 1517043807
+guid: a3bc3144184e2d44c93350dd977487fb
+timeCreated: 1517050364
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: cat
+    100000: trashcan
     100002: //RootNode
-    400000: cat
+    400000: trashcan
     400002: //RootNode
-    2300000: cat
-    3300000: cat
-    4300000: cat
+    2300000: trashcan
+    3300000: trashcan
+    4300000: trashcan
   materials:
     importMaterials: 1
     materialName: 0

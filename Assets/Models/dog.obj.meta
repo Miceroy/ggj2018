@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: d82af8bb728b35d45a4a58abefe1fb42
-timeCreated: 1517043807
+guid: d73eada1b9a875941a2b988248e12df0
+timeCreated: 1517049749
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: cat
+    100000: dog
     100002: //RootNode
-    400000: cat
+    400000: dog
     400002: //RootNode
-    2300000: cat
-    3300000: cat
-    4300000: cat
+    2300000: dog
+    3300000: dog
+    4300000: dog
   materials:
     importMaterials: 1
     materialName: 0
