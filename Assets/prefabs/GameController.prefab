@@ -54,4 +54,6 @@ MonoBehaviour:
   missionObjects:
   - {fileID: 0}
   - {fileID: 0}
+  missionEnabledObjects:
+  - {fileID: 0}
   statusText: {fileID: 0}

@@ -17,13 +17,11 @@ public class RaycastHit : MonoBehaviour {
         UnityEngine.Ray ray = cam.ScreenPointToRay(new Vector3(1280 / 2, 720 / 2, 0));
         UnityEngine.RaycastHit [] hits = Physics.RaycastAll(ray);
         bool nowHitting = false;
-     //   Debug.Log("hits.Length:"+ hits.Length);
         for (int i=0; i< hits.Length; ++i)
         {
             TargetToFilm ttf = hits[i].transform.gameObject.GetComponent<TargetToFilm>();
             if (ttf && ttf.targetActive)
             {
-              //  Debug.Log("Now hitting" + hitsCount);
                 ++hitsCount;
                 nowHitting = true;
                 totalFilmedTime += Time.deltaTime;

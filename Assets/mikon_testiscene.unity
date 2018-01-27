@@ -373,6 +373,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f84204079fd44346baa340a804032ba, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &593988575 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1708409608173608, guid: 4f84204079fd44346baa340a804032ba,
+    type: 2}
+  m_PrefabInternal: {fileID: 282157229}
 --- !u!1001 &617966860
 Prefab:
   m_ObjectHideFlags: 0
@@ -816,6 +821,11 @@ Prefab:
       propertyPath: missionObjects.Array.data[1]
       value: 
       objectReference: {fileID: 1274709956}
+    - target: {fileID: 114537532174174424, guid: 12456538335a47b489e80158f23dcb23,
+        type: 2}
+      propertyPath: missionEnabledObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 593988575}
     - target: {fileID: 114537532174174424, guid: 12456538335a47b489e80158f23dcb23,
         type: 2}
       propertyPath: statusText
