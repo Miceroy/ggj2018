@@ -52,6 +52,7 @@ GameObject:
   - component: {fileID: 114733350998482366}
   - component: {fileID: 114449662300114660}
   - component: {fileID: 114403383589406442}
+  - component: {fileID: 114183814827122990}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -610,6 +611,18 @@ MonoBehaviour:
   trY: {fileID: 4088424377495846}
   trX: {fileID: 4977140613246478}
   speed: {x: 100, y: 100}
+--- !u!114 &114183814827122990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1150843232566890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b1c4033537d6dc4a954dc31dc7ef047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 20504413123579624}
 --- !u!114 &114403383589406442
 MonoBehaviour:
   m_ObjectHideFlags: 1

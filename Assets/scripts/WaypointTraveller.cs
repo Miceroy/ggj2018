@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // MIKKO TODO:
-// - Kameran zoomi smooth
-// - Kun tagi kameran fovissa, niin alkaa juosta timeri ja kun aikaa kulunut x määrä, niin tägi näkyy ruudulla (viestii siihen uutiseen)
-//    -> Pisteet nousee
 // - Kameran rajoitus (x ja y)
 // - Rotate skripti: Akseli ja nopeus
 
