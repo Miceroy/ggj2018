@@ -51,4 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050eab560b8b00041a2282d89c3af143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goToActivate: {fileID: 0}
+  missionObjects:
+  - {fileID: 0}
+  statusText: {fileID: 0}

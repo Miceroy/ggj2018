@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // TODO:
 // - MissionObject
@@ -35,33 +36,47 @@ Objective 3:
 
 public class GameController : MonoBehaviour
 {
-    public GameObject goToActivate;
-
+    public GameObject [] missionObjects;
+    public Text statusText;
+    int curMission = 0;
     public void targetFilmingCompleted(TargetToFilm ttf)
     {
         Debug.Log("targetFilmingCompleted! Got Score: "+ ttf.scoreValue);
         endMission();
         Invoke("startMission", 5);
+        ttf.targetActive = false;
     }
 
     void startMission()
     {
-        goToActivate.SetActive(true);
+        statusText.text = "Start mission";
+        missionObjects[curMission].SetActive(true);
     }
 
     void endMission()
     {
-        goToActivate.SetActive(false);
+        missionObjects[curMission].SetActive(false);
+        curMission++;
+        if (curMission >= missionObjects.Length)
+        {
+            statusText.text = "All missions done!";
+        }
+        else
+        {
+            statusText.text = "Waiting new mission";
+        }
     }
 
     public void updateTotalFilmedTime(float totalFilmedTime)
     {
+        statusText.text = "totalFilmedTime:" + totalFilmedTime;
       //  Debug.Log("totalFilmedTime=" + totalFilmedTime);
     }
 
     // Use this for initialization
     void Start()
     {
+        statusText.text = "Waiting new mission";
         Invoke("startMission", 5);
     }
 

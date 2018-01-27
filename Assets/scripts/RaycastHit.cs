@@ -21,9 +21,9 @@ public class RaycastHit : MonoBehaviour {
         for (int i=0; i< hits.Length; ++i)
         {
             TargetToFilm ttf = hits[i].transform.gameObject.GetComponent<TargetToFilm>();
-            if (ttf)
+            if (ttf && ttf.targetActive)
             {
-                //Debug.Log("Now hitting" + hitsCount);
+                Debug.Log("Now hitting" + hitsCount);
                 ++hitsCount;
                 nowHitting = true;
                 totalFilmedTime += Time.deltaTime;
