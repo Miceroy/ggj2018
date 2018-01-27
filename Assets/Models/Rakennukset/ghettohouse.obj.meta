@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 6f819eaa47bb4a040b5d01a9d7d6f666
-timeCreated: 1517073308
+guid: e0f12996ad337e84484568538c2bfb5a
+timeCreated: 1517079527
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: manor
+    100000: ghettohouse
     100002: //RootNode
-    400000: manor
+    400000: ghettohouse
     400002: //RootNode
-    2300000: manor
-    3300000: manor
-    4300000: manor
+    2300000: ghettohouse
+    3300000: ghettohouse
+    4300000: ghettohouse
   materials:
     importMaterials: 1
     materialName: 0
