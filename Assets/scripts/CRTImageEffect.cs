@@ -38,7 +38,7 @@ public class CRTImageEffect : MonoBehaviour
     private int m_vignetteTexID;
     private int m_lineTexID;
     private int m_lineColorID;
-    private int m_nightVisionID;
+   // private int m_nightVisionID;
     private int m_distortionStrengthID;
  
     private Material m_material;
