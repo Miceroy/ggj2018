@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CopterTilting : MonoBehaviour {
     public float rotateSpeed = 180;
+	public float rotateSpeed2 = 180;
     public float maxAngle = 20;
     public Transform tr;
     float vert = 0;
@@ -30,13 +31,13 @@ public class CopterTilting : MonoBehaviour {
         }
         else
         {
-            if (curHor > rotateSpeed * Time.deltaTime)
+            if (curHor > rotateSpeed2 * Time.deltaTime)
             {
-                curHor -= rotateSpeed * Time.deltaTime;
+                curHor -= rotateSpeed2 * Time.deltaTime;
             }
-            else if (curHor < -rotateSpeed * Time.deltaTime)
+            else if (curHor < -rotateSpeed2 * Time.deltaTime)
             {
-                curHor += rotateSpeed * Time.deltaTime;
+                curHor += rotateSpeed2 * Time.deltaTime;
             }
         }
 
@@ -46,13 +47,13 @@ public class CopterTilting : MonoBehaviour {
         }
         else
         {
-            if (curVert >= rotateSpeed * Time.deltaTime)
+            if (curVert >= rotateSpeed2 * Time.deltaTime)
             {
-                curVert -= rotateSpeed * Time.deltaTime;
+                curVert -= rotateSpeed2 * Time.deltaTime;
             }
-            else if (curVert <= -rotateSpeed * Time.deltaTime)
+            else if (curVert <= -rotateSpeed2 * Time.deltaTime)
             {
-                curVert += rotateSpeed * Time.deltaTime;
+                curVert += rotateSpeed2 * Time.deltaTime;
             }
         }
 
