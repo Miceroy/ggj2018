@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 0fc2fe8c679ac634599593a30c47d1cb
-timeCreated: 1516999449
+guid: 138decba509db044dbcc11f80c4b259f
+timeCreated: 1517069618
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: puu
+    100000: skyscraper
     100002: //RootNode
-    400000: puu
+    400000: skyscraper
     400002: //RootNode
-    2300000: puu
-    3300000: puu
-    4300000: puu
+    2300000: skyscraper
+    3300000: skyscraper
+    4300000: skyscraper
   materials:
     importMaterials: 1
     materialName: 0
@@ -38,7 +38,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.15
+    globalScale: 0.4
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
