@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// MIKKO TODO:
+// - Kameran "täryytys" pois
+// - Peliobjektin tagi komponnetti:
+// - Pistearvo
+// - Kameran zoomi smooth
+// - Kun tagi kameran fovissa, niin alkaa juosta timeri ja kun aikaa kulunut x määrä, niin tägi näkyy ruudulla (viestii siihen uutiseen)
+//    -> Pisteet nousee
+// - Kameran rajoitus (x ja y)
+// - Rotate skripti: Akseli ja nopeus
+
 public class WaypointTraveller : MonoBehaviour {
     public float travelSpeed = 1.0f;
     public Transform [] waypoints;
