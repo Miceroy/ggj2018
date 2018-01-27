@@ -23,7 +23,7 @@ public class RaycastHit : MonoBehaviour {
             TargetToFilm ttf = hits[i].transform.gameObject.GetComponent<TargetToFilm>();
             if (ttf && ttf.targetActive)
             {
-                Debug.Log("Now hitting" + hitsCount);
+              //  Debug.Log("Now hitting" + hitsCount);
                 ++hitsCount;
                 nowHitting = true;
                 totalFilmedTime += Time.deltaTime;
