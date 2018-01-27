@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // MIKKO TODO:
-// - Kameran rajoitus (x ja y)
-// - Rotate skripti: Akseli ja nopeus
+// - 
 
 public class WaypointTraveller : MonoBehaviour {
     public float travelSpeed = 1.0f;
