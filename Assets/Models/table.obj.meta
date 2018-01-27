@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 6c53d998b5779e24ba74ba7075673954
-timeCreated: 1517002874
+guid: 60a48d51519a61d4595b908e102c03fb
+timeCreated: 1517058546
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: RoadX
+    100000: table
     100002: //RootNode
-    400000: RoadX
+    400000: table
     400002: //RootNode
-    2300000: RoadX
-    3300000: RoadX
-    4300000: RoadX
+    2300000: table
+    3300000: table
+    4300000: table
   materials:
     importMaterials: 1
     materialName: 0
@@ -38,7 +38,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.4
+    globalScale: 0.05
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

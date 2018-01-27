@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 6c53d998b5779e24ba74ba7075673954
-timeCreated: 1517002874
+guid: a79bc911b3a5c5846a0effb57f4774d9
+timeCreated: 1517059190
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: RoadX
+    100000: chair
     100002: //RootNode
-    400000: RoadX
+    400000: chair
     400002: //RootNode
-    2300000: RoadX
-    3300000: RoadX
-    4300000: RoadX
+    2300000: chair
+    3300000: chair
+    4300000: chair
   materials:
     importMaterials: 1
     materialName: 0
@@ -38,7 +38,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.4
+    globalScale: 0.05
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
