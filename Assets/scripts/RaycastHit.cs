@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RaycastHit : MonoBehaviour {
+    public CrosshairController crosshair;
     public Camera cam;
     float totalFilmedTime = 0;
     int hitsCount = 0;
+    float decreaseCooldown;
+    //bool prevHitting;
     // Use this for initialization
     void Start () {
-		
-	}
+        decreaseCooldown = 0;
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -33,14 +37,22 @@ public class RaycastHit : MonoBehaviour {
             }
         }
 
-        if(nowHitting == false)
+        crosshair.setFocus(nowHitting);
+        if(nowHitting)
+            decreaseCooldown = 0;
+        else
+            decreaseCooldown += Time.deltaTime;
+
+        if (nowHitting == false && decreaseCooldown > 3.0f)
         {
-         //   Debug.Log("Now hitting" + hits);
-            totalFilmedTime -= Time.deltaTime;
+            //   Debug.Log("Now hitting" + hits);
+            totalFilmedTime -= 0.5f*Time.deltaTime;
             if (totalFilmedTime < 0) totalFilmedTime = 0;
         }
 
-        if(totalFilmedTime > 0)
+        if (totalFilmedTime > 0)
             GameObject.FindWithTag("GameController").GetComponent<GameController>().updateTotalFilmedTime(totalFilmedTime);
+        
+    //    prevHitting = nowHitting;
     }
 }

@@ -572,6 +572,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0357f458157e3d43a020303c6c54ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transforms:
+  - {fileID: 224423089284337478}
+  - {fileID: 224076286839439240}
+  - {fileID: 224785386225618086}
+  - {fileID: 224422823547059632}
+  minDistance: 90
+  maxDistance: 333
+  speed: 1000
 --- !u!114 &114681946554171620
 MonoBehaviour:
   m_ObjectHideFlags: 1
