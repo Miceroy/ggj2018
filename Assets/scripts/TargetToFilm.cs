@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TargetToFilm : MonoBehaviour {
-    public string tag;
+    public string tagName;
     public float scoreValue;
 	// Use this for initialization
 	//void Start () {

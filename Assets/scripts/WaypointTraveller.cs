@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // MIKKO TODO:
-// - Peliobjektin tagi komponnetti:
-// - Pistearvo
 // - Kameran zoomi smooth
 // - Kun tagi kameran fovissa, niin alkaa juosta timeri ja kun aikaa kulunut x määrä, niin tägi näkyy ruudulla (viestii siihen uutiseen)
 //    -> Pisteet nousee
