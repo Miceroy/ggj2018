@@ -21,13 +21,14 @@ GameObject:
   - component: {fileID: 224045110090014634}
   - component: {fileID: 222058417175873872}
   - component: {fileID: 114363927910040598}
+  - component: {fileID: 114104350864488560}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1148967979779644
 GameObject:
   m_ObjectHideFlags: 1
@@ -108,7 +109,6 @@ GameObject:
   - component: {fileID: 223604892714891892}
   - component: {fileID: 114127751046383700}
   - component: {fileID: 114068793135934836}
-  - component: {fileID: 114735010813281964}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -180,6 +180,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114104350864488560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095645214924866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6338f561a8943459d9429d65d46bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 224380266011562026}
 --- !u!114 &114112066260605688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -367,18 +379,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
---- !u!114 &114735010813281964
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1394095374805222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd6338f561a8943459d9429d65d46bb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obj: {fileID: 224380266011562026}
 --- !u!222 &222058417175873872
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -522,7 +522,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 0}
+  m_SizeDelta: {x: 160, y: 24.721878}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224787686239844354
 RectTransform:

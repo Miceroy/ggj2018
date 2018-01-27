@@ -7,6 +7,7 @@ public class CameraController : MonoBehaviour
     public Transform trY;
     public Transform trX;
     public Vector2 speed = new Vector2(100, 100);
+
     // Use this for initialization
     void Start()
     {
