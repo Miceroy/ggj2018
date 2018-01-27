@@ -15,12 +15,15 @@ public class RaycastHit : MonoBehaviour {
     void Update()
     {
         UnityEngine.Ray ray = cam.ScreenPointToRay(new Vector3(1280 / 2, 720 / 2, 0));
-        UnityEngine.RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
+        UnityEngine.RaycastHit [] hits = Physics.RaycastAll(ray);
+        bool nowHitting = false;
+     //   Debug.Log("hits.Length:"+ hits.Length);
+        for (int i=0; i< hits.Length; ++i)
         {
-            TargetToFilm ttf = hit.transform.gameObject.GetComponent<TargetToFilm>();
+            TargetToFilm ttf = hits[i].transform.gameObject.GetComponent<TargetToFilm>();
             if (ttf)
             {
+                nowHitting = true;
                 totalFilmedTime += Time.deltaTime;
                 if(totalFilmedTime > ttf.timeToFilm)
                 {
@@ -29,7 +32,8 @@ public class RaycastHit : MonoBehaviour {
                 }
             }
         }
-        else
+
+        if(nowHitting == false)
         {
             totalFilmedTime -= Time.deltaTime;
             if (totalFilmedTime < 0) totalFilmedTime = 0;
