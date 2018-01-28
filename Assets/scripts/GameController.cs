@@ -54,8 +54,8 @@ public class GameController : MonoBehaviour
     bool hasMission = false;
     public void targetFilmingCompleted(TargetToFilm ttf)
     {
-        Debug.Log("targetFilmingCompleted! Got Score: "+ ttf.scoreValue);
         totalScore += ttf.scoreValue;
+        Debug.Log("targetFilmingCompleted! Got Score: " + ttf.scoreValue + " Score: " + totalScore);
         textScrollerController.replaceLastText(infoTexts[curMission],ttf.tagName);
         endMission();
     }
@@ -97,7 +97,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            statusText.text = "Waiting new mission";
+            statusText.text = "Waiting new mission. Score=" + totalScore;
             Invoke("startMission", 5);
         }
     }
