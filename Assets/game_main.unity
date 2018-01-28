@@ -667,6 +667,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224380266011562026, guid: cc7a0f46e419cb048aff83fd035b061b,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 23.203028
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc7a0f46e419cb048aff83fd035b061b, type: 2}
   m_IsPrefabParent: 0
@@ -774,6 +779,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1499494483}
   m_Script: {fileID: 11500000, guid: a0357f458157e3d43a020303c6c54ff0, type: 3}
+--- !u!114 &1932737644 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114104350864488560, guid: cc7a0f46e419cb048aff83fd035b061b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1499494483}
+  m_Script: {fileID: 11500000, guid: dd6338f561a8943459d9429d65d46bb5, type: 3}
 --- !u!1001 &1973502651
 Prefab:
   m_ObjectHideFlags: 0
@@ -813,6 +824,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114537532174174424, guid: 12456538335a47b489e80158f23dcb23,
+        type: 2}
+      propertyPath: textScrollerController
+      value: 
+      objectReference: {fileID: 1932737644}
     - target: {fileID: 114537532174174424, guid: 12456538335a47b489e80158f23dcb23,
         type: 2}
       propertyPath: missionObjects.Array.data[0]

@@ -344,8 +344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7af466057c69f44c94f34c33fa50e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagName: some object
-  timeToFilm: 10
+  tagName: juna ja lentokone
+  timeToFilm: 5
   scoreValue: 1
   targetActive: 1
 --- !u!114 &114814569615520708
@@ -359,8 +359,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7af466057c69f44c94f34c33fa50e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagName: some object
-  timeToFilm: 10
+  tagName: kissa
+  timeToFilm: 5
   scoreValue: 1
   targetActive: 1
 --- !u!135 &135585131040941706

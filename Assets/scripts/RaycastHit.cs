@@ -6,7 +6,7 @@ public class RaycastHit : MonoBehaviour {
     public CrosshairController crosshair;
     public Camera cam;
     float totalFilmedTime = 0;
-    int hitsCount = 0;
+    //int hitsCount = 0;
     float decreaseCooldown;
     //bool prevHitting;
     // Use this for initialization
@@ -18,26 +18,38 @@ public class RaycastHit : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        TargetToFilm ttf=null;
         UnityEngine.Ray ray = cam.ScreenPointToRay(new Vector3(1280 / 2, 720 / 2, 0));
         UnityEngine.RaycastHit [] hits = Physics.RaycastAll(ray);
         bool nowHitting = false;
         for (int i=0; i< hits.Length; ++i)
         {
-            TargetToFilm ttf = hits[i].transform.gameObject.GetComponent<TargetToFilm>();
+            ttf = hits[i].transform.gameObject.GetComponent<TargetToFilm>();
             if (ttf && ttf.targetActive)
             {
-                ++hitsCount;
                 nowHitting = true;
                 totalFilmedTime += Time.deltaTime;
-                if(totalFilmedTime > ttf.timeToFilm)
+                GameObject.FindWithTag("GameController").GetComponent<GameController>().updateTotalFilmedTime(totalFilmedTime);
+
+                if(crosshair.hasShot() == true)
                 {
                     totalFilmedTime = 0;
                     GameObject.FindWithTag("GameController").GetComponent<GameController>().targetFilmingCompleted(ttf);
+                    ttf.targetActive = false;
                 }
+                break;
             }
         }
 
-        crosshair.setFocus(nowHitting);
+        crosshair.setFocus(ttf, nowHitting);
+
+      /*  if (nowHitting == true && crosshair.hasShot() == true)
+        {
+            totalFilmedTime = 0;
+            GameObject.FindWithTag("GameController").GetComponent<GameController>().targetFilmingCompleted(ttf);
+            ttf.targetActive = false;
+        }
+        */
         if(nowHitting)
             decreaseCooldown = 0;
         else
@@ -50,8 +62,8 @@ public class RaycastHit : MonoBehaviour {
             if (totalFilmedTime < 0) totalFilmedTime = 0;
         }
 
-        if (totalFilmedTime > 0)
-            GameObject.FindWithTag("GameController").GetComponent<GameController>().updateTotalFilmedTime(totalFilmedTime);
+        //if (totalFilmedTime > 0)
+            
         
     //    prevHitting = nowHitting;
     }

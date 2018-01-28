@@ -51,6 +51,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050eab560b8b00041a2282d89c3af143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  infoTexts:
+  - "Laitakaupungilla on tulipalo. Poliisi ep\xE4ilee syyllisen olevan {0}."
+  - Kaupungin keskustassa on kolari. Kolarissa on ollut mukana {0}.
+  textScrollerController: {fileID: 0}
   missionObjects:
   - {fileID: 0}
   - {fileID: 0}
