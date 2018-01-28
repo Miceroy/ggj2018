@@ -18,7 +18,7 @@ public class CopterController : MonoBehaviour {
 
     }
 	
-    void addCollisionVelocity(Vector3 v)
+    public void addCollisionVelocity(Vector3 v)
     {
         xSpeed += v;
     }
