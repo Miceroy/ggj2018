@@ -6240,7 +6240,7 @@ Prefab:
     - target: {fileID: 224380266011562026, guid: cc7a0f46e419cb048aff83fd035b061b,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 23.829788
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc7a0f46e419cb048aff83fd035b061b, type: 2}
