@@ -36,13 +36,20 @@ Objective 3:
 
 public class GameController : MonoBehaviour
 {
-    public string[] infoTexts;
+    public RectTransform timerBar;
     public TextScrollerController textScrollerController;
+    // missions
+    public string[] infoTexts;
+    public string[] missionDefaultObjecNames;
     public GameObject [] missionObjects;
+    public float [] missionTimes;
+    // other
     public GameObject[] missionEnabledObjects;
     public Text statusText;
     int curMission = 0;
     float totalScore = 0;
+    float curTimeLeft = 0;
+    bool hasMission = false;
     public void targetFilmingCompleted(TargetToFilm ttf)
     {
         Debug.Log("targetFilmingCompleted! Got Score: "+ ttf.scoreValue);
@@ -53,6 +60,9 @@ public class GameController : MonoBehaviour
 
     void startMission()
     {
+        hasMission = true;
+        curTimeLeft = 1.0f;
+        //timerBar.sizeDelta = new Vector2(800, 5);
         foreach (GameObject obj in missionEnabledObjects)
         {
             obj.SetActive(true);
@@ -69,7 +79,8 @@ public class GameController : MonoBehaviour
 
     void endMission()
     {
-     //   textScrollerController.setRunning(false);
+        hasMission = false;
+        //   textScrollerController.setRunning(false);
         foreach (GameObject obj in missionEnabledObjects)
         {
             obj.SetActive(false);
@@ -107,7 +118,17 @@ public class GameController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update () {
-		
-	}
+    void Update()
+    {
+        if (hasMission)
+        {
+            curTimeLeft -= Time.deltaTime / missionTimes[curMission];
+            if (curTimeLeft < 0.0f)
+            {
+                textScrollerController.replaceLastText(infoTexts[curMission], missionDefaultObjecNames[curMission]);
+                endMission();
+            }
+            timerBar.sizeDelta = new Vector2(curTimeLeft * 800, 5);
+        }
+    }
 }
