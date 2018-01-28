@@ -78,7 +78,7 @@ public class GameController : MonoBehaviour
     void quitGame()
     {
         statusText.text = "Quit!";
-		Application.LoadLevel("main_menu");
+        Application.LoadLevel("main_menu");
     }
 
     void endMission()
