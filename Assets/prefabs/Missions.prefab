@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagName: some object
-  timeToFilm: 10
+  timeToFilm: 5
   scoreValue: 1
   targetActive: 1
 --- !u!114 &114814569615520708
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagName: some object
-  timeToFilm: 10
+  timeToFilm: 5
   scoreValue: 1
   targetActive: 1
 --- !u!135 &135585131040941706

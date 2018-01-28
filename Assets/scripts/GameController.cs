@@ -45,7 +45,6 @@ public class GameController : MonoBehaviour
         Debug.Log("targetFilmingCompleted! Got Score: "+ ttf.scoreValue);
         endMission();
         Invoke("startMission", 5);
-        ttf.targetActive = false;
     }
 
     void startMission()

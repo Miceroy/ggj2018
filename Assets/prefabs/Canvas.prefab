@@ -577,9 +577,8 @@ MonoBehaviour:
   - {fileID: 224076286839439240}
   - {fileID: 224785386225618086}
   - {fileID: 224422823547059632}
-  minDistance: 90
-  maxDistance: 333
-  speed: 1000
+  minDistance: 50
+  maxDistance: 370
 --- !u!114 &114681946554171620
 MonoBehaviour:
   m_ObjectHideFlags: 1
