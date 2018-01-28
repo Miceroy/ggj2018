@@ -22,7 +22,8 @@ public class CameraZoom : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float zoomFactor = (Input.GetKey(KeyCode.F1) ? 1 : 0) - (Input.GetKey(KeyCode.F2) ? 1 : 0);
+        //float zoomFactor = (Input.GetKey(KeyCode.F1) ? 1 : 0) - (Input.GetKey(KeyCode.F2) ? 1 : 0);
+        float zoomFactor = Input.GetAxis("ZoomOut") - Input.GetAxis("ZoomIn");
         curFov += zoomFactor * Time.deltaTime * zoomSpeed;
         curFov = Mathf.Clamp(curFov, minFov, maxFov);
         cam.fieldOfView = curFov;
