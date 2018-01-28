@@ -1794,6 +1794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 30, y: 30}
+  xSpeed: {x: 0, y: 0, z: 0}
   yawSpeed: 90
   tilt: {fileID: 114733350998482366}
 --- !u!114 &114537007756384020
