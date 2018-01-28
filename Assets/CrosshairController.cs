@@ -5,7 +5,7 @@ using UnityEngine;
 public class CrosshairController : MonoBehaviour {
     public RectTransform[] transforms;
     public float minDistance = 80;
-    public float maxDistance = 333;
+    public float maxDistance = 350;
     
     float direction = 0.0f;
     float interpolant = 1.0f;
