@@ -515,6 +515,7 @@ GameObject:
   - component: {fileID: 4700720935499862}
   - component: {fileID: 33093786852540392}
   - component: {fileID: 23121387408948396}
+  - component: {fileID: 136201226400969016}
   m_Layer: 0
   m_Name: heco
   m_TagString: Untagged
@@ -1863,3 +1864,16 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1222499737920800}
   m_Enabled: 0
+--- !u!136 &136201226400969016
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932978537471458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 3.050001
+  m_Height: 2.1
+  m_Direction: 1
+  m_Center: {x: 0.050000083, y: 1.75, z: 0}

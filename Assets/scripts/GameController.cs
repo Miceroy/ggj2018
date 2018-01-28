@@ -50,6 +50,9 @@ public class GameController : MonoBehaviour
     float totalScore = 0;
     float curTimeLeft = 0;
     bool hasMission = false;
+	
+	public GameObject SeagullPrefab;
+	
     public void targetFilmingCompleted(TargetToFilm ttf)
     {
         Debug.Log("targetFilmingCompleted! Got Score: "+ ttf.scoreValue);
@@ -109,6 +112,11 @@ public class GameController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+		//SeagullPrefab = Resources.Load<GameObject>("Seagull");
+		for (int i = 0; i <100;i++)
+		{
+			GameObject bird = GameObject.Instantiate(SeagullPrefab) as GameObject;
+		}
         foreach (GameObject obj in missionEnabledObjects)
         {
             obj.SetActive(false);
