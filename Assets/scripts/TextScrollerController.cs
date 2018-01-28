@@ -6,33 +6,31 @@ using UnityEngine.UI;
 public class TextScrollerController : MonoBehaviour {
     public RectTransform obj;
     public Text t;
-  //  bool running = false;
     List<string> strings = new List<string>();
-    // Use this for initialization
-    void Start () {
-    }
 
-  /*  public void setRunning(bool run)
+    public void replaceLastText(string tex, string objName)
     {
-        running = run;
-        if (!running)
+        string s = string.Format(tex, objName);
+        if (strings.Count > 0)
         {
-      //      obj.anchoredPosition = new Vector2(600, 0);
+            strings[strings.Count - 1] = s;
         }
         else
-        {
+        {            
+            t.text = s;
         }
-    }*/
+    }
 
-    public void setActiveText(string tex)
+    public void setActiveText(string tex, string objName)
     {
+        string s = string.Format(tex, objName);
         if (t.text == "")
         {
             obj.anchoredPosition = new Vector2(600, 0);
-            t.text = tex;
+            t.text = s;
         }
         else
-            strings.Add(tex);
+            strings.Add(s);
     }
 
 	// Update is called once per frame

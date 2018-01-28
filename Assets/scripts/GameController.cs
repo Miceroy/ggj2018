@@ -42,9 +42,12 @@ public class GameController : MonoBehaviour
     public GameObject[] missionEnabledObjects;
     public Text statusText;
     int curMission = 0;
+    float totalScore = 0;
     public void targetFilmingCompleted(TargetToFilm ttf)
     {
         Debug.Log("targetFilmingCompleted! Got Score: "+ ttf.scoreValue);
+        totalScore += ttf.scoreValue;
+        textScrollerController.replaceLastText(infoTexts[curMission],ttf.tagName);
         endMission();
     }
 
@@ -56,7 +59,12 @@ public class GameController : MonoBehaviour
         }
         statusText.text = "Start mission";
         missionObjects[curMission].SetActive(true);
-        textScrollerController.setActiveText(infoTexts[curMission]);
+        textScrollerController.setActiveText(infoTexts[curMission], "[...]");
+    }
+
+    void quitGame()
+    {
+        statusText.text = "Quit!";
     }
 
     void endMission()
@@ -68,9 +76,11 @@ public class GameController : MonoBehaviour
         }
         missionObjects[curMission].SetActive(false);
         curMission++;
+        textScrollerController.setActiveText("{0}", "");
         if (curMission >= missionObjects.Length)
         {
             statusText.text = "All missions done!";
+            Invoke("quitGame", 10);
         }
         else
         {

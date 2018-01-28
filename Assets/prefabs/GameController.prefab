@@ -52,8 +52,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infoTexts:
-  - "Laitakaupungilla on tulipalo. Poliisi ep\xE4ilee syyllisen olevan kissa."
-  - Kaupungin keskustassa on kolari. Kolarissa on ollut mukana linja-auto ja kuorma-auto.
+  - "Laitakaupungilla on tulipalo. Poliisi ep\xE4ilee syyllisen olevan {0}."
+  - Kaupungin keskustassa on kolari. Kolarissa on ollut mukana {0}.
   textScrollerController: {fileID: 0}
   missionObjects:
   - {fileID: 0}
