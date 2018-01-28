@@ -32681,7 +32681,7 @@ Prefab:
     - target: {fileID: 224380266011562026, guid: cc7a0f46e419cb048aff83fd035b061b,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 23.203028
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc7a0f46e419cb048aff83fd035b061b, type: 2}
@@ -43550,12 +43550,6 @@ Prefab:
       propertyPath: statusText
       value: 
       objectReference: {fileID: 930709692}
-    - target: {fileID: 114537532174174424, guid: 12456538335a47b489e80158f23dcb23,
-        type: 2}
-      propertyPath: SeagullPrefab
-      value: 
-      objectReference: {fileID: 1376080200215534, guid: 3ad2384cf0bb5ed4487710a6475266e1,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 12456538335a47b489e80158f23dcb23, type: 2}
   m_IsPrefabParent: 0

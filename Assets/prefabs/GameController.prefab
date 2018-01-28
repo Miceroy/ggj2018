@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050eab560b8b00041a2282d89c3af143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  failedMissionPoints: 30
   timerBar: {fileID: 0}
   textScrollerController: {fileID: 0}
   infoTexts:
@@ -69,3 +70,5 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   statusText: {fileID: 0}
+  SeagullPrefab: {fileID: 1376080200215534, guid: 3ad2384cf0bb5ed4487710a6475266e1,
+    type: 2}

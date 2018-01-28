@@ -3,12 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// TODO:
-// - MissionObject
-//   - Triggeri maalialueella.
-//   - 
-
-
 /*
 
 Mission 1:
