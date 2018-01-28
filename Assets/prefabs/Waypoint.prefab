@@ -9,30 +9,30 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1484184958509956}
+  m_RootGameObject: {fileID: 1929622746440606}
   m_IsPrefabParent: 1
---- !u!1 &1484184958509956
+--- !u!1 &1929622746440606
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4339486267566138}
-  - component: {fileID: 114537532174174424}
+  - component: {fileID: 4038258462644308}
+  - component: {fileID: 114098505869618302}
   m_Layer: 0
-  m_Name: GameController
-  m_TagString: GameController
+  m_Name: Waypoint
+  m_TagString: CarPath
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4339486267566138
+--- !u!4 &4038258462644308
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1484184958509956}
+  m_GameObject: {fileID: 1929622746440606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,35 +40,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114537532174174424
+--- !u!114 &114098505869618302
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1484184958509956}
+  m_GameObject: {fileID: 1929622746440606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050eab560b8b00041a2282d89c3af143, type: 3}
+  m_Script: {fileID: 11500000, guid: f1dae968b4459fb469dc62ae5882d829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  failedMissionPoints: 30
-  timerBar: {fileID: 0}
-  textScrollerController: {fileID: 0}
-  infoTexts:
-  - "Laitakaupungilla on tulipalo. Poliisi ep\xE4ilee syyllisen olevan {0}."
-  - Kaupungin keskustassa on kolari. Kolarissa on ollut mukana {0}.
-  missionDefaultObjecNames:
-  - '*saatanaan tunarit*'
-  - '*toka obu*'
-  missionObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  missionTimes:
-  - 30
-  - 15
-  missionEnabledObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  statusText: {fileID: 0}
-  SeagullPrefab: {fileID: 1376080200215534, guid: 3ad2384cf0bb5ed4487710a6475266e1,
-    type: 2}
