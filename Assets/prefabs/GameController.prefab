@@ -55,17 +55,21 @@ MonoBehaviour:
   timerBar: {fileID: 0}
   textScrollerController: {fileID: 0}
   infoTexts:
-  - "Laitakaupungilla on tulipalo. Poliisi ep\xE4ilee syyllisen olevan {0}."
-  - Kaupungin keskustassa on kolari. Kolarissa on ollut mukana {0}.
+  - '{0} are running around the scene. More updates to follow...'
+  - A fire has broken out! {0} is burning! More updates to follow...
+  - Luckily a sudden appearance of {0} calmed the situation down. A recap of the situation
+    in our late news broadcast.
   missionDefaultObjecNames:
   - '*saatanaan tunarit*'
   - '*toka obu*'
   missionObjects:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   missionTimes:
   - 30
-  - 15
+  - 20
+  - 20
   missionEnabledObjects:
   - {fileID: 0}
   - {fileID: 0}
