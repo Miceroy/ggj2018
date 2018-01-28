@@ -1,9 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using UnityEngine;
-using System.Collections;
 
 public class WPGizmo : MonoBehaviour
 {
@@ -13,3 +11,5 @@ public class WPGizmo : MonoBehaviour
         Gizmos.DrawSphere(transform.position, 2);
     }
 }
+
+

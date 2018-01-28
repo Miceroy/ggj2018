@@ -14,8 +14,6 @@ public class CopterController : MonoBehaviour {
     // Use this for initialization
 	void Start () {
         tr = GetComponent<Transform>();
-     //   tilt = GetComponent<CopterTilting>();
-
     }
 	
     public void addCollisionVelocity(Vector3 v)
@@ -28,10 +26,6 @@ public class CopterController : MonoBehaviour {
         float vertical = Input.GetAxis("Vertical");
         float horizontal = Input.GetAxis("Horizontal");
         tilt.updateTilt(vertical, horizontal);
-        //  Debug.Log("horizontal=" + horizontal.ToString());
-        //  Debug.Log("vertical=" + vertical.ToString());
-        //  Debug.Log("Time.deltaTime=" + Time.deltaTime.ToString());
-        //  Debug.Log("speed=" + speed.ToString());
         mySpeed += new Vector3(horizontal * speed.x, 0, vertical * speed.y);
         mySpeed = new Vector3(
             Mathf.Clamp(mySpeed.x, -speed.x, speed.x),

@@ -3,22 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AlignToTarget : MonoBehaviour {
-           
-    // Use this for initialization
-	void Start () {
-		
-	}
-
-    void AlignTo(Vector3 v)
-    {
-        //Vector3 worldOrientation = v;
-     //   Vector3 worldOrientation = transform.localToWorldMatrix*orientation.normalized;
-      //  Vector3 axis = Vector3.Cross(worldOrientation, v);
-       // float angle = Vector3.Angle(worldOrientation, -v);
-        //axis = axis == Vector3.zero ? Vector3.forward : axis; //If the two orientations are the same, Vector3.cross returns Vector.zero, which isn't an axis
-        //transform.rotation = Quaternion.AngleAxis(angle, axis);
-    }
-
     // Update is called once per frame
     void Update()
     {

@@ -6,9 +6,8 @@ public class RaycastHit : MonoBehaviour {
     public CrosshairController crosshair;
     public Camera cam;
     float totalFilmedTime = 0;
-    //int hitsCount = 0;
     float decreaseCooldown;
-    //bool prevHitting;
+
     // Use this for initialization
     void Start () {
         decreaseCooldown = 0;
@@ -43,13 +42,6 @@ public class RaycastHit : MonoBehaviour {
 
         crosshair.setFocus(ttf, nowHitting);
 
-      /*  if (nowHitting == true && crosshair.hasShot() == true)
-        {
-            totalFilmedTime = 0;
-            GameObject.FindWithTag("GameController").GetComponent<GameController>().targetFilmingCompleted(ttf);
-            ttf.targetActive = false;
-        }
-        */
         if(nowHitting)
             decreaseCooldown = 0;
         else
@@ -57,14 +49,8 @@ public class RaycastHit : MonoBehaviour {
 
         if (nowHitting == false && decreaseCooldown > 3.0f)
         {
-            //   Debug.Log("Now hitting" + hits);
             totalFilmedTime -= 0.5f*Time.deltaTime;
             if (totalFilmedTime < 0) totalFilmedTime = 0;
         }
-
-        //if (totalFilmedTime > 0)
-            
-        
-    //    prevHitting = nowHitting;
     }
 }

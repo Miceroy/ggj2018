@@ -11,13 +11,8 @@ public class SeagullController : MonoBehaviour {
 		
 	}
 
-    // Update is called once per frame
-    //	void Update () {
-    //	}
-
     void OnTriggerEnter(Collider other)
     {
-    //    Debug.Log("SeagullController::OnTriggerEnter");
         pulu.SetActive(false);
         particle.SetActive(true);
         Invoke("deleteMe", 5.0f);

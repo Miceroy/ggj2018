@@ -62,6 +62,5 @@ public class CopterTilting : MonoBehaviour {
         // rotate x = eteenpäin/taaksepäin
         // rotate z = vasen/oikea
         tr.localRotation = Quaternion.Euler(curVert, 0, curHor);
-     //   Debug.Log("tr.eulerAngles=" + tr.eulerAngles.ToString());
     }
 }

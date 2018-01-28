@@ -28,7 +28,6 @@ public class CRTImageEffect : MonoBehaviour
     private string m_vignettePropertyName = "_VignetteTex";
     private string m_linePropertyName = "_LineTex";
     private string m_lineColorPropertyName = "_LineColor";
- //   private string m_nightVisionPropertyName = "_NightVisionColor";
     private string m_distortionStrengthPropertyName = "_DistortionSrength";
  
     private int m_noiseTexID;

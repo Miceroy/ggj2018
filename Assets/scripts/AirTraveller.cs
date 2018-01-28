@@ -2,14 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// MIKKO TODO:
-// - 
-// - Aika etsiä tagi...
-// - 
-//
-// "Laitakaupungilla on tulipalo. Poliisi epäilee syyllisen olevan {0}."
-// ""
-
 public class AirTraveller : MonoBehaviour {
     public float travelSpeed = 1.0f;
     List<Transform> waypoints = new List<Transform>();
@@ -88,20 +80,12 @@ public class AirTraveller : MonoBehaviour {
             tr.position += delta;	
 			
 		}
-
-        //if (nextIndex < waypoints.Length)
-        //{
 	}
 		
 	void FlyToNextPoint()
-		{   			
-			isMoving = true;
-		}
-        /*}
-        else
-        {
-            tr.position = waypoints[0].position;
-            nextIndex = 1;
-        }*/
+	{   			
+		isMoving = true;
+	}
+
 }
 

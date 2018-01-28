@@ -37,7 +37,6 @@ public class TextScrollerController : MonoBehaviour {
 	void Update () {
         if (t.text.Length > 0)
         {
-            //Debug.Log("t.text.Length:" + 1000/t.text.Length);
             obj.anchoredPosition -= new Vector2(150 * Time.deltaTime, 0);
             if (obj.anchoredPosition.x < -(t.text.Length*15))
             {

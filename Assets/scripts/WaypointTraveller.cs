@@ -2,14 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// MIKKO TODO:
-// - 
-// - Aika etsiä tagi...
-// - 
-//
-// "Laitakaupungilla on tulipalo. Poliisi epäilee syyllisen olevan {0}."
-// ""
-
 public class WaypointTraveller : MonoBehaviour {
     public float travelSpeed = 1.0f;
     public Transform [] waypoints;
