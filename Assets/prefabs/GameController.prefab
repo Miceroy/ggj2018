@@ -57,13 +57,19 @@ MonoBehaviour:
   infoTexts:
   - '{0} are running around the scene. More updates to follow...'
   - A fire has broken out! {0} is burning! More updates to follow...
-  - Luckily a sudden appearance of {0} calmed the situation down. A recap of the situation
+  - Luckily the appearance of {0} calmed the situation down. A recap of the situation
     in our late news broadcast.
+  - '{0} have gathered at the root of a tall building. Something is going on!'
+  - There is a {0} on the roof. We suspect {0} is trying to jump!
+  - '{0} is trying to calm the jumper down. Don''t change the channel now!'
   missionDefaultObjecNames:
   - '*saatanaan tunarit*'
   - '*toka obu*'
   - "*\xF6\xF6\xF6\xF6*"
   missionObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
