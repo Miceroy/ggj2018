@@ -30,24 +30,27 @@ public class CarTraveller2 : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-		float distToDest = (waypoints[nextIndex].position - tr.position).magnitude;
-		if (distToDest < (travelSpeed * Time.deltaTime))
+		if(waypoints.Count > 0)
 		{
-				
-			tr.position = waypoints[nextIndex].position;
-		    ++nextIndex;
-            if (nextIndex >= waypoints.Count)
-                nextIndex = 0;			
+			float distToDest = (waypoints[nextIndex].position - tr.position).magnitude;
+			if (distToDest < (travelSpeed * Time.deltaTime))
+			{
+					
+				tr.position = waypoints[nextIndex].position;
+				++nextIndex;
+				if (nextIndex >= waypoints.Count)
+					nextIndex = 0;			
+			}
+			else
+			{
+				Vector3 v = (waypoints[nextIndex].position - tr.position).normalized;
+				Quaternion q = Quaternion.FromToRotation(transform.right, v);
+				tr.rotation = q * transform.rotation;				
+			}
+		
+			Vector3 delta = travelSpeed * Time.deltaTime * (waypoints[nextIndex].position - tr.position).normalized;
+			tr.position += delta;
 		}
-		else
-		{
-			Vector3 v = (waypoints[nextIndex].position - tr.position).normalized;
-			Quaternion q = Quaternion.FromToRotation(transform.right, v);
-			tr.rotation = q * transform.rotation;				
-		}
-			
-		Vector3 delta = travelSpeed * Time.deltaTime * (waypoints[nextIndex].position - tr.position).normalized;
-        tr.position += delta;
 	}
 }
 

@@ -151,4 +151,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wpRoot: {fileID: 0}
-  travelSpeed: 10
+  startIndex: 0
+  travelSpeed: 20

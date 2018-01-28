@@ -41,7 +41,7 @@ public class CRTImageEffect : MonoBehaviour
     private int m_distortionStrengthID;
  
     private Material m_material;
-     
+     public Shader shader;
     void Awake ()
     {
         InitPropertyIDs();
@@ -52,7 +52,7 @@ public class CRTImageEffect : MonoBehaviour
     private void InitPropertyIDs()
     {
         if(m_material == null)
-            m_material = new Material( Shader.Find("CRT Shader") );
+            m_material = new Material( /*Shader.Find("CRT Shader")*/shader );
          
         m_noiseTexID = Shader.PropertyToID(m_noiseTexPropertyName);
         m_noiseXSpeedID = Shader.PropertyToID(m_noiseXSpeedPropertyName);

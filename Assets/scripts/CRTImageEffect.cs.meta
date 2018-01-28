@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: 48e4b2f3dc9f76546be25c3b3c825a2a
-timeCreated: 1517055781
+timeCreated: 1517153608
 licenseType: Pro
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - noiseTexture: {instanceID: 0}
+  - vignetteTexture: {instanceID: 0}
+  - lineTexture: {instanceID: 0}
+  - shader: {fileID: 4800000, guid: bb983ac42cae69146be2e07ef3acdf4f, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
