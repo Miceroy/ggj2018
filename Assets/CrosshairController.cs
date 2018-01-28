@@ -27,7 +27,7 @@ public class CrosshairController : MonoBehaviour {
         }
         else
         {
-            direction = 0.5f / lastTtf.timeToFilm;
+            if(lastTtf) direction = 0.5f / lastTtf.timeToFilm;
         }
     }
 

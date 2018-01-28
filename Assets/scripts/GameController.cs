@@ -36,6 +36,8 @@ Objective 3:
 
 public class GameController : MonoBehaviour
 {
+    public string[] infoTexts;
+    public TextScrollerController textScrollerController;
     public GameObject [] missionObjects;
     public GameObject[] missionEnabledObjects;
     public Text statusText;
@@ -44,7 +46,6 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("targetFilmingCompleted! Got Score: "+ ttf.scoreValue);
         endMission();
-        Invoke("startMission", 5);
     }
 
     void startMission()
@@ -55,10 +56,12 @@ public class GameController : MonoBehaviour
         }
         statusText.text = "Start mission";
         missionObjects[curMission].SetActive(true);
+        textScrollerController.setActiveText(infoTexts[curMission]);
     }
 
     void endMission()
     {
+     //   textScrollerController.setRunning(false);
         foreach (GameObject obj in missionEnabledObjects)
         {
             obj.SetActive(false);
@@ -72,6 +75,7 @@ public class GameController : MonoBehaviour
         else
         {
             statusText.text = "Waiting new mission";
+            Invoke("startMission", 5);
         }
     }
 

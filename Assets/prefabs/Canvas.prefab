@@ -347,6 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 224380266011562026}
+  t: {fileID: 114314714565095874}
 --- !u!114 &114112066260605688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -493,7 +494,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Laitakaupungilla on tulipalo. Poliisi ep\xE4ilee syyllisen olevan kissa."
+  m_Text: 
 --- !u!114 &114363927910040598
 MonoBehaviour:
   m_ObjectHideFlags: 1
