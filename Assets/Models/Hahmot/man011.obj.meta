@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: d73eada1b9a875941a2b988248e12df0
-timeCreated: 1517049749
+guid: f984f3a1428a44b4f920c67bb06edfe3
+timeCreated: 1517077151
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: dog
+    100000: man004
     100002: //RootNode
-    400000: dog
+    400000: man004
     400002: //RootNode
-    2300000: dog
-    3300000: dog
-    4300000: dog
+    2300000: man004
+    3300000: man004
+    4300000: man004
   materials:
     importMaterials: 1
     materialName: 0
