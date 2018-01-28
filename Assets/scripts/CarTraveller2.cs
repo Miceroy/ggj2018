@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CarTraveller2 : MonoBehaviour {
     public GameObject wpRoot;
+    public int startIndex;
     public float travelSpeed = 1.0f;
     List<Transform> waypoints = new List<Transform>();
     int nextIndex = 0;
@@ -22,7 +23,7 @@ public class CarTraveller2 : MonoBehaviour {
         Debug.Log("Found " + i + " waypoints");
         
         tr = GetComponent<Transform>();		
-		nextIndex = 0;
+		nextIndex = startIndex;
         tr.position = waypoints[nextIndex].position;
 	}
 
