@@ -62,6 +62,7 @@ MonoBehaviour:
   missionDefaultObjecNames:
   - '*saatanaan tunarit*'
   - '*toka obu*'
+  - "*\xF6\xF6\xF6\xF6*"
   missionObjects:
   - {fileID: 0}
   - {fileID: 0}
