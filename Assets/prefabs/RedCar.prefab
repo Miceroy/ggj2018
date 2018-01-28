@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4037337417075602}
-  - component: {fileID: 114284972657692860}
+  - component: {fileID: 114444082447132594}
   m_Layer: 0
   m_Name: RedCar
   m_TagString: Untagged
@@ -139,7 +139,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1764008954744216}
   m_Mesh: {fileID: 4300000, guid: b772e1c703626684fa5072106a7f6d9a, type: 3}
---- !u!114 &114284972657692860
+--- !u!114 &114444082447132594
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -147,12 +147,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1190115750379314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9049b93d02cbaa140a8eda318f26f84d, type: 3}
+  m_Script: {fileID: 11500000, guid: be1783f7e68b24845967168ab4f7b48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wpRoot: {fileID: 0}
   travelSpeed: 10
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
