@@ -36,8 +36,6 @@ Objective 3:
 
 public class GameController : MonoBehaviour
 {
-    public float missionFailPenalty = 30;
-    public float minScoreToEnd = -100;
     public RectTransform timerBar;
     public TextScrollerController textScrollerController;
     // missions
@@ -57,8 +55,8 @@ public class GameController : MonoBehaviour
 	
     public void targetFilmingCompleted(TargetToFilm ttf)
     {
+        Debug.Log("targetFilmingCompleted! Got Score: "+ ttf.scoreValue);
         totalScore += ttf.scoreValue;
-        Debug.Log("targetFilmingCompleted! Got Score: " + ttf.scoreValue + " Score: " + totalScore);
         textScrollerController.replaceLastText(infoTexts[curMission],ttf.tagName);
         endMission();
     }
@@ -93,14 +91,14 @@ public class GameController : MonoBehaviour
         missionObjects[curMission].SetActive(false);
         curMission++;
         textScrollerController.setActiveText("{0}", "");
-        if (curMission >= missionObjects.Length || totalScore < minScoreToEnd)
+        if (curMission >= missionObjects.Length)
         {
-            statusText.text = "All missions done! Score="+totalScore;
+            statusText.text = "All missions done!";
             Invoke("quitGame", 10);
         }
         else
         {
-            statusText.text = "Waiting new mission. Score=" + totalScore;
+            statusText.text = "Waiting new mission";
             Invoke("startMission", 5);
         }
     }
@@ -115,7 +113,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
 		//SeagullPrefab = Resources.Load<GameObject>("Seagull");
-		for (int i = 0; i <100;i++)
+		for (int i = 0; i <101;i++)
 		{
 			GameObject bird = GameObject.Instantiate(SeagullPrefab) as GameObject;
 		}
@@ -135,9 +133,7 @@ public class GameController : MonoBehaviour
             curTimeLeft -= Time.deltaTime / missionTimes[curMission];
             if (curTimeLeft < 0.0f)
             {
-                // Time out!
                 textScrollerController.replaceLastText(infoTexts[curMission], missionDefaultObjecNames[curMission]);
-                totalScore -= missionFailPenalty;
                 endMission();
             }
             timerBar.sizeDelta = new Vector2(curTimeLeft * 800, 5);
