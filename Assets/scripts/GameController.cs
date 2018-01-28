@@ -36,6 +36,7 @@ Objective 3:
 
 public class GameController : MonoBehaviour
 {
+    public float failedMissionPoints = 30;
     public RectTransform timerBar;
     public TextScrollerController textScrollerController;
     // missions
@@ -94,12 +95,12 @@ public class GameController : MonoBehaviour
         textScrollerController.setActiveText("{0}", "");
         if (curMission >= missionObjects.Length)
         {
-            statusText.text = "All missions done!";
+            statusText.text = "All missions done! Score:"+totalScore;
             Invoke("quitGame", 10);
         }
         else
         {
-            statusText.text = "Waiting new mission";
+            statusText.text = "Waiting new mission. Score:" + totalScore;
             Invoke("startMission", 5);
         }
     }
@@ -135,6 +136,7 @@ public class GameController : MonoBehaviour
             if (curTimeLeft < 0.0f)
             {
                 textScrollerController.replaceLastText(infoTexts[curMission], missionDefaultObjecNames[curMission]);
+                totalScore -= failedMissionPoints;
                 endMission();
             }
             timerBar.sizeDelta = new Vector2(curTimeLeft * 800, 5);
