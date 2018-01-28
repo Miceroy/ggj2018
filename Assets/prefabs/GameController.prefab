@@ -55,7 +55,7 @@ MonoBehaviour:
   timerBar: {fileID: 0}
   textScrollerController: {fileID: 0}
   infoTexts:
-  - '{0} are running around the scene. More updates to follow...'
+  - '{0} are running around in the city park. More updates to follow...'
   - A fire has broken out! {0} is burning! More updates to follow...
   - Luckily the appearance of {0} calmed the situation down. A recap of the situation
     in our late news broadcast.
@@ -63,9 +63,12 @@ MonoBehaviour:
   - There is a {0} on the roof. We suspect {0} is trying to jump!
   - '{0} is trying to calm the jumper down. Don''t change the channel now!'
   missionDefaultObjecNames:
-  - '*saatanaan tunarit*'
-  - '*toka obu*'
-  - "*\xF6\xF6\xF6\xF6*"
+  - '*Horses?*'
+  - '*Something?*'
+  - '*...*'
+  - '*Ufos?*'
+  - '*chimney?*'
+  - '*Snow storm?*'
   missionObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -74,6 +77,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   missionTimes:
+  - 30
+  - 20
+  - 15
   - 30
   - 20
   - 20
